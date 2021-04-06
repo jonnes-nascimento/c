@@ -43,14 +43,14 @@ int main(int argc, char *argv[]) {
 
     Hash *hash = (Hash *) malloc(sizeof(Hash));
 
-    insertNode(hash, "name", "Jonnes");
+    insertNode(hash, "name", "Jonnes"); // insertNode is the same of hash["name"] = "Jonnes"
     insertNode(hash, "phone", "+55 11 98765-4321");
     insertNode(hash, "name", "Foo");
     insertNode(hash, "phone", "Bar");
 
     printf("\n");
 
-    printf("Name: %s\n", searchKey(hash, "name"));
+    printf("Name: %s\n", searchKey(hash, "name")); // searchKey is the same of hash["name"]
     printf("Phone: %s\n", searchKey(hash, "phone"));
     printf("Test: %s\n", searchKey(hash, "test"));
 
